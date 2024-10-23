@@ -1,0 +1,13 @@
+flask
+flask-mysql-connector
+flask-jwt-extended
+flask-swagger-ui
+flask-caching
+mysql-connector-python
+pymysql
+flask-mysqldb
+flask_sqlalchemy 
+flask_migrate
+pytest
+pytest-flask
+python-dotenv

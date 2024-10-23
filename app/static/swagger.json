@@ -1,0 +1,196 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Products API",
+        "description": "API para manejar productos",
+        "version": "1.0.0"
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+            "description": "JWT authorization token"
+        }
+    },
+    "security": [
+        {
+            "Bearer": []
+        }
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "summary": "Autenticación de usuarios",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Credenciales de usuario",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "username": {"type": "string"},
+                                "password": {"type": "string"}
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Access token",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "access_token": {"type": "string"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/products": {
+            "post": {
+                "summary": "Crear un producto",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Datos del producto",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {"type": "string"},
+                                "price": {"type": "number"},
+                                "quantity": {"type": "integer"}
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Producto creado"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Obtener la lista de productos",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "page",
+                        "description": "Número de página",
+                        "type": "integer"
+                    },
+                    {
+                        "in": "query",
+                        "name": "limit",
+                        "description": "Límite de productos por página",
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de productos",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "products": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {"type": "integer"},
+                                            "name": {"type": "string"},
+                                            "price": {"type": "number"},
+                                            "quantity": {"type": "integer"}
+                                        }
+                                    }
+                                },
+                                "total": {"type": "integer"},
+                                "page": {"type": "integer"},
+                                "pages": {"type": "integer"}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/products/{id}": {
+            "get": {
+                "summary": "Obtener un producto por ID",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "ID del producto",
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "id": {"type": "integer"},
+                                "name": {"type": "string"},
+                                "price": {"type": "number"},
+                                "quantity": {"type": "integer"}
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Actualizar un producto",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "ID del producto",
+                        "type": "integer"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Datos del producto",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "name": {"type": "string"},
+                                "price": {"type": "number"},
+                                "quantity": {"type": "integer"}
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Producto actualizado"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Eliminar un producto",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "ID del producto",
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " Producto eliminado"
+                    }
+                }
+            }
+        }
+    }
+}

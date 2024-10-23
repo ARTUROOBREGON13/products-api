@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Cafetera",
+        "color": "amarillo",
+        "price": 875,
+        "quantity": 29
+    },
+    {
+        "name": "Parlante",
+        "color": "morado",
+        "price": 426,
+        "quantity": 7
+    },
+    {
+        "name": "Maceta",
+        "color": "rojo",
+        "price": 850,
+        "quantity": 70
+    },
+    {
+        "name": "Maceta",
+        "color": "rosa",
+        "price": 589,
+        "quantity": 77
+    },
+    {
+        "name": "Parlante",
+        "color": "naranja",
+        "price": 429,
+        "quantity": 8
+    },
+    {
+        "name": "Maceta",
+        "color": "verde",
+        "price": 99,
+        "quantity": 45
+    },
+    {
+        "name": "Parlante",
+        "color": "rosa",
+        "price": 233,
+        "quantity": 67
+    },
+    {
+        "name": "Cafetera",
+        "color": "negro",
+        "price": 219,
+        "quantity": 51
+    },
+    {
+        "name": "Camiseta",
+        "color": "gris",
+        "price": 261,
+        "quantity": 60
+    },
+    {
+        "name": "Auriculares",
+        "color": "morado",
+        "price": 817,
+        "quantity": 46
+    },
+    {
+        "name": "Camara",
+        "color": "morado",
+        "price": 197,
+        "quantity": 90
+    },
+    {
+        "name": "Camiseta",
+        "color": "rojo",
+        "price": 491,
+        "quantity": 45
+    },
+    {
+        "name": "Mochila",
+        "color": "cian",
+        "price": 469,
+        "quantity": 95
+    },
+    {
+        "name": "Camiseta",
+        "color": "rojo",
+        "price": 67,
+        "quantity": 55
+    },
+    {
+        "name": "Laptop",
+        "color": "negro",
+        "price": 982,
+        "quantity": 36
+    },
+    {
+        "name": "Auriculares",
+        "color": "gris",
+        "price": 695,
+        "quantity": 75
+    },
+    {
+        "name": "Parlante",
+        "color": "rojo",
+        "price": 149,
+        "quantity": 12
+    },
+    {
+        "name": "Maceta",
+        "color": "gris",
+        "price": 865,
+        "quantity": 18
+    },
+    {
+        "name": "Mochila",
+        "color": "morado",
+        "price": 550,
+        "quantity": 84
+    },
+    {
+        "name": "Reloj",
+        "color": "rosa",
+        "price": 742,
+        "quantity": 64
+    },
+    {
+        "name": "Laptop",
+        "color": "rojo",
+        "price": 617,
+        "quantity": 93
+    },
+    {
+        "name": "Zapatos",
+        "color": "amarillo",
+        "price": 702,
+        "quantity": 74
+    },
+    {
+        "name": "Maceta",
+        "color": "verde",
+        "price": 395,
+        "quantity": 59
+    },
+    {
+        "name": "Camara",
+        "color": "morado",
+        "price": 541,
+        "quantity": 26
+    },
+    {
+        "name": "Mochila",
+        "color": "morado",
+        "price": 863,
+        "quantity": 79
+    },
+    {
+        "name": "Camiseta",
+        "color": "cian",
+        "price": 311,
+        "quantity": 66
+    },
+    {
+        "name": "Auriculares",
+        "color": "morado",
+        "price": 713,
+        "quantity": 33
+    },
+    {
+        "name": "Laptop",
+        "color": "amarillo",
+        "price": 908,
+        "quantity": 59
+    },
+    {
+        "name": "Zapatos",
+        "color": "cian",
+        "price": 808,
+        "quantity": 22
+    },
+    {
+        "name": "Mochila",
+        "color": "amarillo",
+        "price": 190,
+        "quantity": 99
+    },
+    {
+        "name": "Parlante",
+        "color": "cian",
+        "price": 536,
+        "quantity": 78
+    },
+    {
+        "name": "Zapatos",
+        "color": "morado",
+        "price": 623,
+        "quantity": 3
+    },
+    {
+        "name": "Parlante",
+        "color": "negro",
+        "price": 919,
+        "quantity": 24
+    },
+    {
+        "name": "Zapatos",
+        "color": "morado",
+        "price": 882,
+        "quantity": 1
+    },
+    {
+        "name": "Zapatos",
+        "color": "negro",
+        "price": 454,
+        "quantity": 64
+    },
+    {
+        "name": "Reloj",
+        "color": "amarillo",
+        "price": 361,
+        "quantity": 52
+    },
+    {
+        "name": "Zapatos",
+        "color": "naranja",
+        "price": 906,
+        "quantity": 85
+    },
+    {
+        "name": "Camiseta",
+        "color": "azul",
+        "price": 969,
+        "quantity": 90
+    },
+    {
+        "name": "Mochila",
+        "color": "verde",
+        "price": 188,
+        "quantity": 50
+    },
+    {
+        "name": "Camara",
+        "color": "gris",
+        "price": 326,
+        "quantity": 76
+    },
+    {
+        "name": "Reloj",
+        "color": "morado",
+        "price": 253,
+        "quantity": 44
+    },
+    {
+        "name": "Laptop",
+        "color": "naranja",
+        "price": 863,
+        "quantity": 74
+    },
+    {
+        "name": "Parlante",
+        "color": "gris",
+        "price": 480,
+        "quantity": 71
+    },
+    {
+        "name": "Camiseta",
+        "color": "verde",
+        "price": 520,
+        "quantity": 55
+    },
+    {
+        "name": "Reloj",
+        "color": "azul",
+        "price": 31,
+        "quantity": 19
+    },
+    {
+        "name": "Camara",
+        "color": "rosa",
+        "price": 145,
+        "quantity": 99
+    },
+    {
+        "name": "Zapatos",
+        "color": "negro",
+        "price": 462,
+        "quantity": 86
+    },
+    {
+        "name": "Auriculares",
+        "color": "verde",
+        "price": 669,
+        "quantity": 37
+    },
+    {
+        "name": "Camiseta",
+        "color": "verde",
+        "price": 646,
+        "quantity": 86
+    },
+    {
+        "name": "Auriculares",
+        "color": "azul",
+        "price": 148,
+        "quantity": 85
+    }
+]
