@@ -143,6 +143,9 @@
                                 "quantity": {"type": "integer"}
                             }
                         }
+                    },
+                    "404": {
+                        "description": "Producto no encontrado"
                     }
                 }
             },
@@ -172,6 +175,9 @@
                 "responses": {
                     "200": {
                         "description": "Producto actualizado"
+                    },
+                    "404": {
+                        "description": "Producto no encontrado"
                     }
                 }
             },
@@ -188,6 +194,9 @@
                 "responses": {
                     "200": {
                         "description": " Producto eliminado"
+                    },
+                    "404": {
+                        "description": "Producto no encontrado"
                     }
                 }
             }

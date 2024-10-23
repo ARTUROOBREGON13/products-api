@@ -69,8 +69,8 @@ def get_product(id):
         product = get_or_404(Product, id)
         return jsonify({'id': product.id, 'name': product.name, 'price': product.price, 'quantity': product.quantity})
     except Exception as e:
-        if isinstance(e, HTTPException) and e.code == 404:
-            return jsonify({"msg": "Producto no encontrado"}), e.code
+        if isinstance(e, HTTPException) and e['code'] == 404:
+            return jsonify({"msg": "Producto no encontrado"}), e['code']
         return jsonify({"msg": "Error al obtener producto"}), 500
 
 @api.route('/products/<int:id>', methods=['PUT'])
@@ -88,8 +88,8 @@ def update_product(id):
         return jsonify({'message': 'Producto actualizado'})
     except Exception as e:
         db.session.rollback()
-        if isinstance(e, HTTPException) and e.code == 404:
-            return jsonify({"msg": "Producto no encontrado"}), e.code
+        if isinstance(e, HTTPException) and e['code'] == 404:
+            return jsonify({"msg": "Producto no encontrado"}), e['code']
         return jsonify({"msg": "Error al actualizar producto"}), 500
 
 @api.route('/products/<int:id>', methods=['DELETE'])
@@ -102,6 +102,6 @@ def delete_product(id):
         return jsonify({'message': 'Producto eliminado'})
     except Exception as e:
         db.session.rollback()
-        if isinstance(e, HTTPException) and e.code == 404:
-            return jsonify({"msg": "Producto no encontrado"}), e.code
+        if isinstance(e, HTTPException) and e['code'] == 404:
+            return jsonify({"msg": "Producto no encontrado"}), e['code']
         return jsonify({"msg": "Error al eliminar producto"}), 500
