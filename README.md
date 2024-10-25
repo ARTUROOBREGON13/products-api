@@ -54,11 +54,20 @@ Accede a la API en [http://localhost:5000/api](http://localhost:5000/api) para l
 Si prefieres ejecutar el proyecto en un contenedor Docker, asegúrate de tener configurado tu archivo `Dockerfile` y `docker-compose.yml`. Luego, ejecuta los siguientes comandos:
 
 ```bash
-docker build -t products-api
+docker build -t products-api .
 docker run -p 5000:5000 products-api
 ```
 
 La API estará disponible en [http://localhost:5000/api](http://localhost:5000/api).
+
+Considera que se crean dos usuarios de prueba para la configuración inicial del aplicativo. Estos usuarios son:
+
+```javascript
+[
+    {'username': 'user1', 'password': 'password1'},
+    {'username': 'user2', 'password': 'password2'}
+]
+```
 
 ## Caching
 
@@ -66,7 +75,7 @@ Se implementa un sistema de caching simple en memoria para almacenar temporalmen
 
 ## Pruebas Unitarias
 
-Se realizaron un total de 9 pruebas unitarias en la API, que incluyen:
+Se realizaron un total de 9 pruebas unitarias en la API, todas ejecutadas con una base de datos SQLite en memoria. En esta base de datos se registra manualmente el usuario "test" con la contraseña "test" en cada uno de los casos de prueba para realizar el acceso correcto con autenticación, las pruebas incluidas son:
 
 - **Autenticación/login**: Verifica el correcto funcionamiento del proceso de inicio de sesión.
 - **Creación de producto**: Asegura que se puedan agregar nuevos productos a la base de datos.
